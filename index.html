@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+
+</!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+	<div class="background">
+		<div class="nav">
+			<a class="a active" href="#">HOME</a>
+			<a class="b" href="#">ABOUT ME</a>
+			<a class="c" href="#">GALLERY</a>
+			<a class="d" href="#">CONTACT US</a>			
+		</div>
+	<div class="content">
+		<div class="home">
+			<h1>I am Nayemuzzaman</h1>
+			<h3>Programming|Traveller</h3>
+		</div>
+
+		<div class="aboutus">
+			<p><b>Hello visitors,</b><br>
+			Welcome to visit my website.Here you all about me. <br>
+			This website you can find my work like Programming, my travel.
+			I love to travel with camera and click to try awesome photo
+			just for you. I love sing because you visit here.<br>
+			If any question, you may ask in contact section.</p>
+			<p>
+			 There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words etc.
+			</p>
+		</div>
+		<div class="gallery">
+			<div class="image">
+				<img src="image/1.png"/>
+			</div>
+			<div class="image">
+				<img src="image/2.png"/>
+			</div>
+			<div class="image">
+				<img src="image/3.png"/>
+			</div>
+			<div class="image">
+				<img src="image/4.png"/>
+			</div>
+			<div class="image">
+				<img src="image/5.png"/>
+			</div>
+			<div class="image">
+				<img src="image/6.png"/>
+			</div>
+			<div class="image">
+				<img src="image/7.png"/>
+			</div>
+			<div class="image">
+				<img src="image/8.png"/>
+			</div>
+			<div class="image">
+				<img src="image/9.png"/>
+			</div>
+		</div>
+		
+		<div class="contactus">
+			<div class="contactform">
+				<form action="index.html" method="post">
+					<input type="text" name="" class="inputtext" value="First Name">
+					<input type="text" name="" class="inputtext" value="Last Name">
+					<input type="text" name="" class="inputtext" value="Your Email">
+					<textarea cols="4" rows="6" class="inputmessage">Write your Messages....</textarea>
+					<input type="button" name="" class="submitbutton" value="Submit">
+				</form>
+			</div>
+			
+		</div>
+	
+	</div>
+
+	</div>
+<script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+<script type="text/javascript">
+	
+	$(document).ready(function(){
+		$('a').click(function(){
+			//alert("click test");
+			var selected = $(this);
+			$('a').removeClass('active');
+			$(selected).addClass('active');
+		});
+
+		var $a= $('.a'),
+		$b = $('.b'),
+		$c = $('.c'),
+		$d = $('.d'),
+		$home = $('.home'),
+		$aboutus = $('.aboutus'),
+		$gallery = $('.gallery'),
+		$contactus = $('.contactus'); 
+
+		$a.click(function(){
+			$home.fadeIn();
+			$aboutus.fadeOut();
+			$gallery.fadeOut();
+			$contactus.fadeOut();
+		});
+		$b.click(function(){
+			$aboutus.fadeIn();
+			$home.fadeOut();
+			$gallery.fadeOut();
+			$contactus.fadeOut();
+		});
+		$c.click(function(){
+			$gallery.fadeIn();
+			$home.fadeOut();
+			$aboutus.fadeOut();
+			$contactus.fadeOut();
+		});
+		$d.click(function(){
+			$contactus.fadeIn();
+			$home.fadeOut();
+			$gallery.fadeOut();
+			$aboutus.fadeOut();
+		});
+	});
+
+</script>
+
+</body>
+</html>
